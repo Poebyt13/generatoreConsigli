@@ -1,0 +1,87 @@
+
+@use 'variables' as *;
+@use 'cuboRandom';
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: $color-neutral-blueScuro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.main{
+    background-color: $color-neutral-blueChiaroScuro;
+    width: 27.5rem;
+    height: 16rem;
+    border-radius: .8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $color-neutral-blueChiaro;
+    overflow: hidden;
+
+    &__advice{
+        display: flex;
+        width: 28.5%;
+        align-items: center;
+        justify-content: center;
+        color: $color-primary-green;
+        letter-spacing: .3rem;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 2.5rem 0 0 0;
+
+
+        h6{
+            margin: 0;
+            margin-right: .5rem;
+        }
+        p{
+            margin: 0;
+            font-size: .8rem;
+        }
+    }
+
+    &__text{
+        color: $color-primary-cyan;
+        font-weight: 600;
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 2rem;
+        margin: 1.4rem 2.5rem 1.4rem 2.5rem;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            margin: 0;
+        }
+    }
+
+    &__separatore{
+        width: 85%;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px){
+
+    .main{
+        width: 85%;
+        height: 18rem;
+
+        &__text{
+            font-size: 1.2rem;
+            height: 45%;
+
+
+        }
+    }
+}   
